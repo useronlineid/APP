@@ -18,12 +18,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Sukhumvit Set';
-    src: url('Assets/Fonts/SukhumvitSet-SemiBold.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Sukhumvit Set';
