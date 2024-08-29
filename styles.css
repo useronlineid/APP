@@ -1,37 +1,37 @@
 
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('/assets/Fonts/SukhumvitSet-Thin.woff') format('woff');
+    src: url('images/SukhumvitSet-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('/assets/Fonts/SukhumvitSet-Light.woff') format('woff');
+    src: url('images/SukhumvitSet-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('/assets/Fonts/SukhumvitSet-Medium.woff') format('woff');
+    src: url('images/SukhumvitSet-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('/assets/Fonts/SukhumvitSet-SemiBold.woff') format('woff');
+    src: url('images/SukhumvitSet-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('/assets/Fonts/SukhumvitSet-Bold.woff') format('woff');
+    src: url('images/SukhumvitSet-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('/assets/Fonts/SukhumvitSet-Extra\ Bold.woff') format('woff');
+    src: url('images/SukhumvitSet-Extra\ Bold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
