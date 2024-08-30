@@ -1,104 +1,162 @@
-
 body {
-    font-family: 'Sukhumvit Set', Arial, sans-serif;
+    font-family: 'Kanit', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    background-image: url('https://github.com/useronlineid/webapp/blob/main/A-background.jpg?raw=true'); /* ลิงค์รูปภาพพื้นหลัง */
+    background-size: cover;
+    background-position: center;
     margin: 0;
-    background: radial-gradient(circle, #ffd9f6, #ffffff);
-    overflow: auto;
 }
 
-.container {
-    display: flex;
-    gap: 20px;
-    transform: scale(0.67);
-    transform-origin: center;
-    position: relative;
+.hidden {
+    display: none;
 }
 
-.display-container, .form-container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+#login, #menu, .sub-menu {
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 20px;
     border-radius: 10px;
-    min-width: 300px;
-    max-width: 1200px;
-    min-height: 400px;
-    max-height: 1500px;
-    resize: both;
-    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    resize: both; /* อนุญาตให้ปรับขนาดของ textarea ได้ทั้งในแนวตั้งและแนวนอน */
+    overflow: auto; /* เพิ่ม scroll bar อัตโนมัติเมื่อเนื้อหาเกินขนาดของ textarea */
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 380px;
+h1, h2 {
+    color: white;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+#login {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-label {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: normal;
-    color: #333;
-}
-
-input, select {
-    margin-top: 5px;
+#login input, #submenu8-password input {
+    width: 88%;
     padding: 10px;
-    font-size: 20px;
-    font-family: 'Kanit', Arial, sans-serif;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: #fff;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
 }
 
-input:focus, select:focus {
-    border-color: #0066cc;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+#login button {
+    width: 95%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login button:hover {
+    background-color: #45a049;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98.6%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+#logout-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background-color: #e53935;
+}
+
+#session-timer {
+    font-size: 16px;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 200px;  /* ขนาดที่เล็กลง */
+    height: 150px; /* ขนาดที่เล็กลง */
+    transition: transform 0.3s;  /* เพิ่ม transition */
+}
+
+.menu-item:hover {
+    transform: scale(1.1);  /* ขยายเมื่อ hover */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 button {
-    margin-top: 10px;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0066cc;
-    color: #fff;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;  /* เพิ่ม transition */
 }
 
 button:hover {
-    background-color: #004b99;
+    background-color: #45a049;
+    transform: scale(1.1);  /* ขยายเมื่อ hover */
 }
 
-.display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#submenu8-password {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#canvas {
-    border: none;
+#submenu8-password input {
+    width: 88%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#password-error {
+    color: red;
+    font-size: 14px;
 }
