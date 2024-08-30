@@ -1,0 +1,103 @@
+body {
+    font-family: 'Kanit', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #ffd9f6, #ffffff);
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    transform: scale(0.67);
+    transform-origin: center;
+    position: relative;
+}
+
+.display-container, .form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 1200px;
+    min-height: 400px;
+    max-height: 1500px;
+    resize: both;
+    overflow: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Kanit', Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input:focus, select:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #004b99;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#canvas {
+    border: none;
+}
